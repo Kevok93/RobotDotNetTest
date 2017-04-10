@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F9D932B-7E25-41BF-BC7C-A291C9C364F5}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RobotDotNetTest</RootNamespace>
+    <AssemblyName>RobotDotNetTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FRC.CameraServer, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.CameraServer.1.0.2\lib\net45\FRC.CameraServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FRC.CameraServer, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.CameraServer.1.0.2\lib\net45\FRC.CameraServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FRC.NetworkTables, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.NetworkTables.3.1.8\lib\net46\FRC.NetworkTables.dll</HintPath>
+    </Reference>
+    <Reference Include="FRC.NetworkTables.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.NetworkTables.Core.3.1.8\lib\net45\FRC.NetworkTables.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FRC.NetworkTables.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.NetworkTables.Core.3.1.8\lib\net45\FRC.NetworkTables.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FRC.OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.OpenCvSharp.1.0.3\lib\net45\FRC.OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FRC.OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.OpenCvSharp.1.0.3\lib\net45\FRC.OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FRC.WPILib.CTRE, Version=2017.0.2.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.WPILib.CTRE.2017.0.2\lib\net451\FRC.WPILib.CTRE.dll</HintPath>
+    </Reference>
+    <Reference Include="HAL, Version=2017.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.WPILib.2017.1.0\lib\net451\HAL.dll</HintPath>
+    </Reference>
+    <Reference Include="HAL, Version=2017.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.WPILib.Extras.2017.1.0\lib\net451\HAL.dll</HintPath>
+    </Reference>
+    <Reference Include="NativeLibraryUtilities, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\NativeLibraryUtilities.1.0.3\lib\net45\NativeLibraryUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="NativeLibraryUtilities, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\NativeLibraryUtilities.1.0.3\lib\net45\NativeLibraryUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Context, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\Nito.AsyncEx.Context.1.1.0\lib\net46\Nito.AsyncEx.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Coordination, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\Nito.AsyncEx.Coordination.1.0.2\lib\net46\Nito.AsyncEx.Coordination.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Tasks, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\Nito.AsyncEx.Tasks.1.1.0\lib\net46\Nito.AsyncEx.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.Collections.Deque, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\Nito.Collections.Deque.1.0.0\lib\portable45-net45+win8+wp8+wpa81\Nito.Collections.Deque.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.Disposables, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\Nito.Disposables.1.0.0\lib\portable45-net45+win8+wp8+wpa81\Nito.Disposables.dll</HintPath>
+    </Reference>
+    <Reference Include="WPILib, Version=2017.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.WPILib.2017.1.0\lib\net451\WPILib.dll</HintPath>
+    </Reference>
+    <Reference Include="WPILib.Extras, Version=2017.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\FRC.WPILib.Extras.2017.1.0\lib\net451\WPILib.Extras.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="wpinative\libcscore.so" />
+    <None Include="wpinative\libHALAthena.so" />
+    <None Include="wpinative\libntcore.so" />
+    <None Include="wpinative\libOpenCvSharpExtern.so" />
+    <None Include="wpinative\libopencv_calib3d.so.3.1" />
+    <None Include="wpinative\libopencv_core.so.3.1" />
+    <None Include="wpinative\libopencv_features2d.so.3.1" />
+    <None Include="wpinative\libopencv_flann.so.3.1" />
+    <None Include="wpinative\libopencv_highgui.so.3.1" />
+    <None Include="wpinative\libopencv_imgcodecs.so.3.1" />
+    <None Include="wpinative\libopencv_imgproc.so.3.1" />
+    <None Include="wpinative\libopencv_ml.so.3.1" />
+    <None Include="wpinative\libopencv_objdetect.so.3.1" />
+    <None Include="wpinative\libopencv_photo.so.3.1" />
+    <None Include="wpinative\libopencv_shape.so.3.1" />
+    <None Include="wpinative\libopencv_stitching.so.3.1" />
+    <None Include="wpinative\libopencv_superres.so.3.1" />
+    <None Include="wpinative\libopencv_video.so.3.1" />
+    <None Include="wpinative\libopencv_videoio.so.3.1" />
+    <None Include="wpinative\libopencv_videostab.so.3.1" />
+    <None Include="wpinative\libwpiutil.so" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autonomous.cs" />
+    <Compile Include="DriveTrain.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="RobotControl.cs" />
+    <Compile Include="RobotParts.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
