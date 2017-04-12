@@ -6,13 +6,13 @@ namespace RobotDotNetTest {
     public partial class RobotDotNetTest {
 
         void setMotors(double left, double right) {
-            leftA.Set(left);
-            leftB.Set(left);
-            leftC.Set(left);
+            leftMotorA.Set(left);
+            leftMotorB.Set(left);
+            leftMotorC.Set(left);
 
-            rightA.Set(right);
-            rightB.Set(right);
-            rightC.Set(right);
+            rightMotorA.Set(right);
+            rightMotorB.Set(right);
+            rightMotorC.Set(right);
         }
 
         bool turnLeft(int targetHeading) {
